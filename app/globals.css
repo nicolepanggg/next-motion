@@ -39,8 +39,20 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1{
+  @apply mb-5;
 }
+
+  .square{
+    @apply m-auto px-5 text-center w-44 h-44 flex justify-center items-center text-white font-bold mb-28;
+    &:nth-child(3n-1){
+      @apply bg-slate-500;
+    }
+    &:nth-child(3n){
+      @apply bg-yellow-500;
+    }
+    &:nth-child(3n+1){
+      @apply bg-pink-400;
+    }
+  }
+
